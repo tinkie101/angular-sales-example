@@ -1,0 +1,21 @@
+<form method="get">
+  <fieldset>
+    <legend>Submit sale action</legend>
+    <p>
+      <label>Holder ID</label><br>
+      <input type="text" name="holder" [(ngModel)]="saleData.account">
+    </p>
+
+    <p>
+      <label>Item ID</label><br>
+      <input type="number" name="amount" [(ngModel)]="saleData.inventory">
+    </p>
+
+    <p>
+      <label>Amount</label><br>
+      <input type="number" name="amount" [(ngModel)]="saleData.amount">
+    </p>
+    <button type="submit"
+            (click)="onSubmitSale()">Submit</button>
+  </fieldset>
+</form>
